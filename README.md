@@ -22,7 +22,7 @@ Explored basic descriptive statistics (max/min, mean, or mode) for variables and
 ### Coding with Subqueries and Common Table Expressions (CTEs)
 Designed CTEs that would make code more readable and easier to reuse.
 ### Visualizations
-Visualizations were created in Tableau. The link to the storyboard can be found here:
+Visualizations were created in Tableau. The link to the storyboard can be found here: [Rockbuster Visualizations]([https://pages.github.com/](https://public.tableau.com/app/profile/rangamani.varadachary/viz/rbmani_CF_Exercise10_Rockbuster/RockbusterRentalStory?publish=yes)https://public.tableau.com/app/profile/rangamani.varadachary/viz/rbmani_CF_Exercise10_Rockbuster/RockbusterRentalStory?publish=yes).
 ### Reporting results
 A PowerPoint presentation with answers to key questions and recommendations.
 
