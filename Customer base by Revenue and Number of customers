@@ -1,0 +1,29 @@
+WITH countries_and_revenue_cte(country_id,country,total_revenue) AS
+(
+SELECT D.country_id,
+   D.country,
+   SUM(E.amount) AS total_revenue
+FROM customer A
+INNER JOIN address B ON A.address_id = B.address_id
+INNER JOIN city C ON B.city_id = C.city_id
+INNER JOIN country D ON C.country_ID = D.country_ID
+INNER JOIN payment E ON A.customer_id = E.customer_id
+GROUP BY D.country_id, D.country
+ORDER BY total_revenue DESC
+),
+ countries_and_customers_cte(country_id,country,no_of_customers) AS
+(
+SELECT D.country_id,
+   D.country,
+   count(A.customer_id) AS no_of_customers
+FROM customer A
+INNER JOIN address B ON A.address_id = B.address_id
+INNER JOIN city C ON B.city_id = C.city_id
+INNER JOIN country D ON C.country_ID = D.country_ID
+GROUP BY D.country_id, D.country
+ORDER BY COUNT(A.customer_id) DESC
+)
+
+SELECT R.country_id, R.country, R.total_revenue, C.no_of_customers
+FROM countries_and_revenue_cte R
+INNER JOIN countries_and_customers_cte C ON R.country_id = C.country_id
