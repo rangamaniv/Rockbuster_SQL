@@ -1,0 +1,8 @@
+SELECT A.rental_duration,
+               SUM(E.amount) AS total_revenue_amount
+FROM film A
+INNER JOIN inventory C ON A.film_id = C.film_id
+INNER JOIN rental D ON D.inventory_id = C.inventory_id
+INNER JOIN payment E ON E.rental_id = D.rental_id
+GROUP BY A.rental_duration
+ORDER BY total_revenue_amount desc
