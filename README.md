@@ -11,7 +11,8 @@ Rockbuster Stealth LLC is a movie rental company that used to have stores around
 A relational database made up of 15 tables containing data on film, category, rental, customers, actors, payments, and more.
 Descriptions and Entity Relationship Diagrams can be found in the Rockbuster Data Dictionary.
 ## Tools
-Language: PostgreSQL Software: pgAdmin, DbVisualizer, Tableau, Excel
+##### Language: PostgreSQL 
+##### Software: pgAdmin, DbVisualizer, Tableau, Excel
 ## Skills Demonstrated
 ### Cleaning data
 Checked and addressed duplicates, non-uniform data, and missing values.
